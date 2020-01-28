@@ -10,8 +10,6 @@
 //Schaltjahrfunktion
 int is_leapyear(int year)
 {
-    if (year < 1582)
-    {
     //Fall, dass für year mod 4 == 0 ist
     if (year % 4 == 0)
     {
@@ -41,49 +39,47 @@ int is_leapyear(int year)
     {
         return 0;
     }
-return -1;
-}
 
 }
 
 
 int main()
 {
-    int tag, monat, jahr, tagdesjahres, sjahr;
+    int day, month, year, tagdesjahres, lyear;
     //Datumsdifferenzen
     int tage[12] = {1,-1,0,0,1,1,2,3,3,4,4};
     int i;
     printf("Jahr eingeben: ");
-    scanf("%i",&jahr);
+    scanf("%i",&year);
     fflush(stdin);
     do
     {
         printf("Monat eingeben: ");
-        scanf("%i",&monat);
+        scanf("%i",&month);
         fflush(stdin);
-    } while (monat < 1 || monat > 12);
-    sjahr = is_leapyear(jahr);
+    } while (month < 1 || month > 12);
+    lyear = is_leapyear(year);
     do
     {
     printf("Tag eingeben: ");
-    scanf("%i",&tag);
+    scanf("%i",&day);
     fflush(stdin);
     //Prüfen, ob Eingabe richtig
-    } while ((tag < 1 && tag > 32) ||
-             (tag == 29 && sjahr == 0) ||
-             (tag == 31 && monat %2 == 0 && monat > 2 && monat < 7) ||
-             (tag == 31 && monat %2 == 1 && monat > 2 && monat > 8));
+    } while ((day < 1 && day > 32) ||
+             (day == 29 && lyear == 0) ||
+             (day == 31 && month %2 == 0 && month > 2 && month < 7) ||
+             (day == 31 && month %2 == 1 && month > 2 && month > 8));
 
 //Simple Addition
-    tagdesjahres = (monat - 1) * 30 + tag + tage[(monat-2)] + sjahr;
+    tagdesjahres = (month - 1) * 30 + day + tage[(month-2)] + lyear;
 
-    if (monat == 2)
+    if (month == 2)
     {
         tagdesjahres -=1;
     }
     printf("\nTag des Jahres: %i",tagdesjahres);
 
-     printf("\nTag des Jahres: %i",sjahr);
+     printf("\nTag des Jahres: %i",lyear);
 
     printf("Hello world!\n");
     return 0;
