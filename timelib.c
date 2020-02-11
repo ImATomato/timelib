@@ -1,15 +1,6 @@
-/**
-* Tag des Jahres
-*
-* Autor: Alexander Kötter
-* Datum 2020-01-27
-**/
-
 #include <stdio.h>
 #include <stdlib.h>
-#include "timelib.h"
-//Schaltjahrfunktion
-/**
+
 int is_leapyear(int year)
  {
           if (year > 2400 ||year < 1582)
@@ -71,37 +62,4 @@ int day_of_the_year(int day,int month, int year)
       {
           return -1;
       }
- }**/
-int main()
-{
-    int day, month, year, tagdesjahres, lyear;
-//int existdate;
-
-
-    printf("Jahr eingeben: ");
-    scanf("%i",&year);
-    fflush(stdin);
-
-    printf("Monat eingeben: ");
-    scanf("%i",&month);
-    fflush(stdin);
-
-    printf("Tag eingeben: ");
-    scanf("%i",&day);
-    fflush(stdin);
-
- int existdate = exists_date(day,month,year);
-
-    if(existdate == 1)
-  {tagdesjahres =  day_of_the_year(day,month,year);
-    printf("\nTag des Jahres: %i",tagdesjahres);
-  }
-  else
-  {
-         printf("\nUngültiges Datum.");
-  }
-
-
-    printf("\n\nHello world!\n");
-    return 0;
-}
+ }
