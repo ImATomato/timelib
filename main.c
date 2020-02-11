@@ -101,7 +101,6 @@ int main()
          printf("\nUngültiges Datum.");
   }
 
-
     printf("\n\nHello world!\n");
     return 0;
 }

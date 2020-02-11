@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+ int weekday(year)
+ {
+ int w = (1 + 5*((year-1)%4) +4*((year-1)%100) + 6*((year-1)%400))%7;
+ return w;
+ }
+
+
 int is_leapyear(int year)
  {
           if (year > 2400 ||year < 1582)
