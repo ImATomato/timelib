@@ -56,13 +56,13 @@ void input_date(int *day, int *month, int *year)
 {
     do
     {
-        printf("Please input Day: ");
+        printf("Tag eingeben: ");
         scanf("%i", day);
         fflush(stdin);
-        printf("Please input Month: ");
+        printf("Monat eingeben: ");
         scanf("%i", month);
         fflush(stdin);
-        printf("Please input Year: ");
+        printf("Jahr eingeben: ");
         scanf("%i", year);
         fflush(stdin);
     }
