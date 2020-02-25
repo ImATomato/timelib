@@ -1,7 +1,7 @@
 /**
-* Autor: Alexander Kötter
-* Datum: 2020-02-11
-* Last edit: 2020-02-25
+* Author: Alexander Kötter
+* Date: 2020-02-11
+* Edit: 2020-02-25
 **/
 #ifndef TIMELIB_H_INCLUDED
 #define TIMELIB_H_INCLUDED
