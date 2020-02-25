@@ -1,8 +1,9 @@
 /**
 * Tag des Jahres
 *
-* Autor: Alexander Kötter
-* Datum 2020-01-27
+* Author: Alexander KÃ¶tter
+* Date 2020-01-27
+* Edit: 2020-02-25
 **/
 
 #include <stdio.h>
@@ -77,8 +78,8 @@ int main()
     int day, month, year, tagdesjahres, lyear;
 //int existdate;
 
-
-    printf("Jahr eingeben: ");
+    input_date(&day, &month, &year);
+    /**printf("Jahr eingeben: ");
     scanf("%i",&year);
     fflush(stdin);
 
@@ -88,7 +89,7 @@ int main()
 
     printf("Tag eingeben: ");
     scanf("%i",&day);
-    fflush(stdin);
+    fflush(stdin);**/
 
  int existdate = exists_date(day,month,year);
 
@@ -98,7 +99,7 @@ int main()
   }
   else
   {
-         printf("\nUngültiges Datum.");
+         printf("\nUngÃ¼ltiges Datum.");
   }
 
     printf("\n\nHello world!\n");
