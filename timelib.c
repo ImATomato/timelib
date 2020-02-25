@@ -1,3 +1,10 @@
+/**
+* Author: Alexander Kötter
+* Date: 2020-02-11
+* Edit: 2020-02-25
+**/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
