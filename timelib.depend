@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1583157106 source:c:\users\teilnehmer\desktop\timelib-master\timelib-master\main.c
-	<stdio.h>
-	<stdlib.h>
-	"timelib.h"
-
-1583157106 c:\users\teilnehmer\desktop\timelib-master\timelib-master\timelib.h
-
