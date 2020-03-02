@@ -95,11 +95,11 @@ int main()
 
     if(existdate == 1)
   {tagdesjahres =  day_of_the_year(day,month,year);
-    printf("\nTag des Jahres: %i",tagdesjahres);
+    printf("\nDay of the year: %i",tagdesjahres);
   }
   else
   {
-         printf("\nUngültiges Datum.");
+         printf("\nInvalid Date.");
   }
 
     printf("\n\nHello world!\n");
